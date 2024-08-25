@@ -18,7 +18,7 @@ public class Commande {
         this.produits.add(produit);
     }
 
-    private double calculerTotal() {
+    public double calculerTotal() {
         return produits.stream().mapToDouble(Produit::calculerPrix).sum();
     }
 
